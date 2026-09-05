@@ -1,0 +1,76 @@
+:root {
+  --color-primary: #533afd;
+  --color-primary-deep: #4434d4;
+  --color-primary-press: #2e2b8c;
+  --color-primary-soft: #665efd;
+  --color-primary-bg-subdued-hover: #b9b9f9;
+  --color-brand-dark-900: #1c1e54;
+  --color-ink: #0d253d;
+  --color-ink-secondary: #273951;
+  --color-ink-mute: #64748d;
+  --color-ink-mute-2: #61718a;
+  --color-on-primary: #ffffff;
+  --color-canvas: #ffffff;
+  --color-canvas-soft: #f6f9fc;
+  --color-canvas-cream: #f5e9d4;
+  --color-hairline: #e3e8ee;
+  --color-hairline-input: #a8c3de;
+  --color-ruby: #ea2261;
+  --color-magenta: #f96bee;
+  --color-lemon: #9b6829;
+  --color-shadow-blue: #003770;
+
+  --font-primary: "Inter", "SF Pro Display", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", "SF Mono", ui-monospace, monospace;
+
+  --text-display-xxl: 300 56px/1.03 var(--font-primary);
+  --text-display-xl: 300 48px/1.15 var(--font-primary);
+  --text-display-lg: 300 32px/1.1 var(--font-primary);
+  --text-display-md: 300 26px/1.12 var(--font-primary);
+  --text-heading-lg: 300 22px/1.1 var(--font-primary);
+  --text-heading-md: 300 20px/1.4 var(--font-primary);
+  --text-heading-sm: 300 18px/1.4 var(--font-primary);
+  --text-body-lg: 300 16px/1.4 var(--font-primary);
+  --text-body-md: 300 15px/1.4 var(--font-primary);
+  --text-body-tabular: 300 14px/1.4 var(--font-primary);
+  --text-button-md: 400 16px/1.0 var(--font-primary);
+  --text-button-sm: 400 14px/1.0 var(--font-primary);
+  --text-caption: 400 13px/1.4 var(--font-primary);
+  --text-micro: 300 11px/1.4 var(--font-primary);
+  --text-micro-cap: 400 10px/1.15 var(--font-primary);
+
+  --tracking-display-xxl: -1.4px;
+  --tracking-display-xl: -0.96px;
+  --tracking-display-lg: -0.64px;
+  --tracking-display-md: -0.26px;
+  --tracking-heading-lg: -0.22px;
+  --tracking-heading-md: -0.2px;
+  --tracking-heading-sm: 0;
+  --tracking-body-lg: 0;
+  --tracking-body-md: 0;
+  --tracking-body-tabular: -0.42px;
+  --tracking-button-md: 0;
+  --tracking-button-sm: 0;
+  --tracking-caption: -0.39px;
+  --tracking-micro: 0;
+  --tracking-micro-cap: 0.1px;
+
+  --radius-xs: 4px;
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-pill: 9999px;
+
+  --space-xxs: 2px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-xxl: 32px;
+  --space-huge: 64px;
+  
+  --shadow-level-1: rgba(0, 55, 112, 0.08) 0 1px 3px;
+  --shadow-level-2: rgba(0, 55, 112, 0.08) 0 8px 24px, rgba(0, 55, 112, 0.04) 0 2px 6px;
+}
