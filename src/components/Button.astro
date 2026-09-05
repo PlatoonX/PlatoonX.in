@@ -1,0 +1,71 @@
+---
+interface Props {
+  href?: string;
+  variant?: 'primary' | 'secondary' | 'dark';
+  class?: string;
+}
+
+const { href, variant = 'primary', class: className } = Astro.props;
+
+let baseClass = 'button-primary-pill';
+if (variant === 'secondary') baseClass = 'button-secondary';
+if (variant === 'dark') baseClass = 'button-on-dark';
+
+const combinedClass = [baseClass, className].filter(Boolean).join(' ');
+const Tag = href ? 'a' : 'button';
+---
+<Tag href={href} class={combinedClass}>
+  <slot />
+</Tag>
+
+<style>
+  a, button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--text-button-md);
+    padding: 8px 16px;
+    border-radius: var(--radius-pill);
+    transition: all 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+  }
+  .button-primary-pill {
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+  }
+  .button-primary-pill:hover, .button-primary-pill:focus-visible {
+    background-color: var(--color-primary-deep);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-level-1);
+    outline: 2px solid var(--color-primary-soft);
+    outline-offset: 2px;
+  }
+  .button-primary-pill:active {
+    background-color: var(--color-primary-press);
+    transform: translateY(0);
+  }
+  
+  .button-secondary {
+    background-color: var(--color-canvas);
+    color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+  }
+  .button-secondary:hover, .button-secondary:focus-visible {
+    background-color: var(--color-canvas-soft);
+    border-color: var(--color-primary-deep);
+    outline: 2px solid var(--color-primary-soft);
+    outline-offset: 2px;
+  }
+  
+  .button-on-dark {
+    background-color: var(--color-brand-dark-900);
+    color: var(--color-on-primary);
+  }
+  .button-on-dark:hover, .button-on-dark:focus-visible {
+    background-color: var(--color-ink);
+    transform: translateY(-2px);
+    outline: 2px solid var(--color-on-primary);
+    outline-offset: 2px;
+  }
+</style>
