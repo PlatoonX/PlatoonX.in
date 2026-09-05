@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PlatoonX — AI Research for India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+  <nav>
+    <div class="logo">
+      <a href="#"><img src="logo/BGR - PlatoonX - black.png" alt="PlatoonX" height="24"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#projects">Projects</a></li>
+    </ul>
+    <a href="#contact" class="btn-primary">Collaborate</a>
+  </nav>
+
+  <div class="mesh-bg"></div>
+
+  <section class="hero reveal">
+    <h1>Advancing India through world-class AI research.</h1>
+    <p>We are a research-first AI lab building fundamental algorithms, original technologies, and high-impact real-world applications.</p>
+    <a href="#contact" class="btn-primary">Collaborate With Us</a>
+  </section>
+
+  <section id="about" class="reveal">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2 style="font: var(--font-display-xl); margin-bottom: var(--space-md);">Our Vision</h2>
+      <p style="font: var(--font-body-lg); color: var(--color-ink-secondary);">To establish India as a global leader in artificial intelligence research, innovation, and technological development, contributing original knowledge and AI technologies that address significant challenges across science, industry, and society.</p>
+    </div>
+  </section>
+
+  <section id="research" class="reveal">
+    <h2 style="font: var(--font-display-xl); margin-bottom: var(--space-xxl); text-align: center;">Research Areas</h2>
+    <div class="grid">
+      <div class="card">
+        <span class="tag">Algorithms</span>
+        <h3>Machine Learning</h3>
+        <p style="font: var(--font-body-md); color: var(--color-ink-secondary);">Fundamental algorithms and statistical models that enable computers to perform tasks without explicit instructions.</p>
+      </div>
+      <div class="card">
+        <span class="tag">LLMs</span>
+        <h3>Generative AI</h3>
+        <p style="font: var(--font-body-md); color: var(--color-ink-secondary);">Models capable of generating novel text, images, or other media, pushing the boundaries of automated creativity.</p>
+      </div>
+      <div class="card">
+        <span class="tag">Vision-Language</span>
+        <h3>Multimodal AI</h3>
+        <p style="font: var(--font-body-md); color: var(--color-ink-secondary);">Systems that process and relate information from multiple distinct modalities like text, audio, and vision.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2 style="font: var(--font-display-xl); margin-bottom: var(--space-xxl); text-align: center;">Current Work</h2>
+    <div class="mockup">
+      <div class="mockup-code">
+        <pre><span style="color:var(--color-primary-soft)">import</span> torch
+<span style="color:var(--color-primary-soft)">import</span> torch.nn <span style="color:var(--color-primary-soft)">as</span> nn
+
+<span style="color:var(--color-primary-soft)">class</span> <span style="color:var(--color-lemon)">PlatoonXModel</span>(nn.Module):
+    <span style="color:var(--color-primary-soft)">def</span> <span style="color:var(--color-magenta)">__init__</span>(self, d_model=<span style="color:var(--color-ruby)">1024</span>):
+        <span style="color:var(--color-primary-bg-subdued-hover)">super</span>().__init__()
+        self.encoder = nn.TransformerEncoder(
+            nn.TransformerEncoderLayer(d_model, nhead=<span style="color:var(--color-ruby)">16</span>),
+            num_layers=<span style="color:var(--color-ruby)">24</span>
+        )
+        
+    <span style="color:var(--color-primary-soft)">def</span> <span style="color:var(--color-magenta)">forward</span>(self, x):
+        <span style="color:var(--color-ink-mute)"># Apply attention across multimodal inputs</span>
+        <span style="color:var(--color-primary-soft)">return</span> self.encoder(x)</pre>
+      </div>
+      <div class="mockup-metrics">
+        <div class="metric">
+          <h4>Parameters</h4>
+          <div class="val tnum">45.2B</div>
+        </div>
+        <div class="metric">
+          <h4>Training Loss</h4>
+          <div class="val tnum">0.8412</div>
+        </div>
+        <div class="metric">
+          <h4>Eval MMLU</h4>
+          <div class="val tnum">82.4%</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal" style="text-align: center;">
+    <h2 style="font: var(--font-display-xl); margin-bottom: var(--space-md);">Let's build India's AI future together.</h2>
+    <p style="font: var(--font-heading-md); color: var(--color-ink-secondary); margin-bottom: var(--space-xl);">We are always looking for exceptional researchers, engineers, and partners.</p>
+    <a href="mailto:hello@platoonx.in" class="btn-primary">Contact Us</a>
+  </section>
+
+  <footer>
+    <img src="logo/BGR - PlatoonX - black.png" alt="PlatoonX" height="24" style="margin-bottom: var(--space-md);">
+    <p>&copy; 2026 PlatoonX. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
